@@ -3,7 +3,10 @@
     <style name="Base.Theme.ReceitasDeCasa" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <item name="colorPrimary" type="color">@color/PrimaryColor</item>
+    <item name="colorPrimaryVariant" type="color">@color/PrimaryVarianty</item>
     </style>
+
 
     <style name="Theme.ReceitasDeCasa" parent="Base.Theme.ReceitasDeCasa" />
 </resources>

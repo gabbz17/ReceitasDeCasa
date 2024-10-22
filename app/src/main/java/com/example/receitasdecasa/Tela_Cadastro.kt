@@ -7,10 +7,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.receitasdecasa.databinding.ActivityMainBinding
+import com.example.receitasdecasa.databinding.ActivityTelaCadastroBinding
 
-class MainActivity : AppCompatActivity() {
+class Tela_Cadastro : AppCompatActivity() {
     private val binding by lazy {
-        ActivityMainBinding.inflate(layoutInflater)
+         ActivityTelaCadastroBinding.inflate(layoutInflater)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,11 +22,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.btnLoginTInicial.setOnClickListener {
+        binding.viewLoginCadastro.setOnClickListener {
             startActivity(Intent(this, Tela_Login::class.java))
-        }
-        binding.viewCriarTInicial.setOnClickListener {
-            startActivity(Intent(this, Tela_Cadastro::class.java))
         }
     }
 }

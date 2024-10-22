@@ -3,5 +3,8 @@
     <style name="Base.Theme.ReceitasDeCasa" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary" type="color">@color/PrimaryColor</item>
+        <item name="colorPrimaryVariant" type="color">@color/PrimaryVarianty</item>
+        <item name="android:windowBackground">@color/white</item>
     </style>
 </resources>
