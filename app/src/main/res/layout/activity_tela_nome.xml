@@ -5,10 +5,23 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tela_Cadastro">
+    tools:context=".Tela_nome">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Estamos quase lá!"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input_email"
+        android:id="@+id/input_nome"
         android:layout_width="365dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -22,25 +35,22 @@
         app:endIconTint="@color/black"
         app:errorIconTint="@color/design_default_color_error"
         app:errorTextColor="@color/design_default_color_error"
-        app:helperText="Ex: User@gmail.com"
-        app:helperTextTextColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12">
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txt_email"
+            android:id="@+id/txt_nome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="text|textEmailAddress"
+            android:hint="Nome"
             android:textColor="@color/black"
             android:textColorHint="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input_senha"
+        android:id="@+id/input_sobre"
         android:layout_width="365dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -48,88 +58,48 @@
         android:padding="8dp"
         android:textColorHint="@color/SubTitle"
         app:boxStrokeErrorColor="@color/design_default_color_error"
-        app:counterEnabled="true"
-        app:counterMaxLength="10"
-        app:counterTextColor="@color/black"
         app:cursorErrorColor="@color/design_default_color_error"
-        app:endIconCheckable="true"
-        app:endIconMode="password_toggle"
+        app:endIconMode="clear_text"
         app:endIconTint="@color/black"
         app:errorIconTint="@color/design_default_color_error"
         app:errorTextColor="@color/design_default_color_error"
+        app:hintTextColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_email">
+        app:layout_constraintTop_toBottomOf="@+id/input_nome">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txt_password"
+            android:id="@+id/txt_sobrenome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Senha"
-            android:inputType="text|textPassword"
-            android:maxLength="10"
+            android:hint="Sobrenome"
             android:textColor="@color/black"
             android:textColorHint="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:text="Crie sua conta aqui"
-        android:textColor="@color/black"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/btn_cadastro"
+        android:id="@+id/btn_confirmar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="Inscrever-se"
+        android:text="Confirmar"
         android:textColor="@color/white"
-        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_senha" />
+        app:layout_constraintTop_toBottomOf="@+id/input_sobre" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginBottom="24dp"
-        android:text="Já tem uma conta?"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/view_login_Cadastro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginBottom="24dp"
-        android:text="Faça login aqui"
-        android:textColor="@color/PrimaryVarianty"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView11" />
-
-    <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Como é sua primeira vez conosco, crie sua conta!"
+        android:text="Informe-nos seu nome e sobrenome!"
         android:textColor="@color/SubTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
