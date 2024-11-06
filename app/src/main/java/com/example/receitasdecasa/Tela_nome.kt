@@ -7,14 +7,14 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.receitasdecasa.databinding.ActivityTelaCadastroBinding
 import com.example.receitasdecasa.databinding.ActivityTelaNomeBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import java.util.HashMap
 
 class Tela_nome : AppCompatActivity() {
-    private val bancoDados = FirebaseFirestore.getInstance()
+    private val bancoDados by lazy {
+        FirebaseFirestore.getInstance()
+    }
     private val autenticacao = FirebaseAuth.getInstance()
     private val binding by lazy {
         ActivityTelaNomeBinding.inflate(layoutInflater)
@@ -28,30 +28,33 @@ class Tela_nome : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.btnConfirmar.setOnClickListener {
-            val nome = binding.txtNome.text.toString()
-            val sobrenome = binding.txtSobrenome.text.toString()
-            val uid = autenticacao.currentUser?.uid
-
-            if (validacao(nome, sobrenome)){
-
-                val dados = mapOf(
-                    "Nome" to nome,
-                    "Sobrenome" to sobrenome
-                )
-
-                bancoDados.collection("InfoUsers").document("$uid").set(dados)
-                    .addOnSuccessListener {
-                        Toast.makeText(this, "Informações salvas", Toast.LENGTH_LONG).show()
-                        startActivity(Intent(this, Tela_Principal::class.java))
-                    }
-                    .addOnFailureListener {
-                        Toast.makeText(this, "Não sei", Toast.LENGTH_LONG).show()
-                    }
-
-
-            }
+        binding.btnConfi.setOnClickListener {
+            mudarTela()
         }
+
+    }
+
+    private fun mudarTela() {
+        val idUser = autenticacao.currentUser?.uid.toString()
+        val nome = binding.txtNome.text.toString()
+        val sobrenome = binding.txtSobrenome.text.toString()
+
+        if (validacao(nome, sobrenome)){
+
+            val user = hashMapOf( "username" to nome, "email" to sobrenome )
+
+            bancoDados.collection("usuarios")
+                .document(idUser)
+                .set(user)
+                .addOnSuccessListener {
+                    Toast.makeText(this, "Informações salvas", Toast.LENGTH_LONG).show()
+                    startActivity(Intent(this, Tela_Principal::class.java))
+                }
+                .addOnFailureListener {
+                    Toast.makeText(this, "Não cadastrada", Toast.LENGTH_LONG).show()
+                }
+        }
+
     }
 
     private fun validacao(nome: String, sobrenome: String):Boolean {
