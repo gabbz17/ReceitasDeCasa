@@ -36,14 +36,17 @@ class Tela_nome : AppCompatActivity() {
             if (validacao(nome, sobrenome)){
 
                 val dados = mapOf(
-                    "Nome" to "$nome ",
-                    "Sobrenome" to "$sobrenome "
+                    "Nome" to nome,
+                    "Sobrenome" to sobrenome
                 )
 
                 bancoDados.collection("InfoUsers").document("$uid").set(dados)
                     .addOnSuccessListener {
                         Toast.makeText(this, "Informações salvas", Toast.LENGTH_LONG).show()
                         startActivity(Intent(this, Tela_Principal::class.java))
+                    }
+                    .addOnFailureListener {
+                        Toast.makeText(this, "Não sei", Toast.LENGTH_LONG).show()
                     }
 
 

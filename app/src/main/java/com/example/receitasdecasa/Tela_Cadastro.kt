@@ -40,6 +40,7 @@ class Tela_Cadastro : AppCompatActivity() {
                     autenticacao.createUserWithEmailAndPassword(email, password)
                         .addOnSuccessListener {
                             Toast.makeText(this, "Informações salvas", Toast.LENGTH_LONG).show()
+                            autenticacao.currentUser?.sendEmailVerification()
                             startActivity(Intent(this, Tela_nome::class.java))
                         }
                         .addOnFailureListener {
