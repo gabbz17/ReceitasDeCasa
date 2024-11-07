@@ -2,6 +2,7 @@ package com.example.receitasdecasa
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -34,17 +35,29 @@ class Tela_Login : AppCompatActivity() {
                 val senha = binding.editKey.text.toString()
 
                 if (validacao(email, senha)){
-                    autenticacao.signInWithEmailAndPassword(email, senha)
-                        .addOnSuccessListener {
-                            Toast.makeText(this, "Bem vindo de volta!", Toast.LENGTH_LONG).show()
-                            startActivity(Intent(this, Tela_Principal::class.java))
-                        }
-                        .addOnFailureListener {
-                            Toast.makeText(this, "Dados incorretos!", Toast.LENGTH_LONG).show()
-                        }
+                    if (validar(email)){
+                        autenticacao.signInWithEmailAndPassword(email, senha)
+                            .addOnSuccessListener {
+                                Toast.makeText(this, "Bem vindo de volta!", Toast.LENGTH_LONG).show()
+                                startActivity(Intent(this, Tela_Principal::class.java))
+                            }
+                            .addOnFailureListener {
+                                Toast.makeText(this, "Dados incorretos!", Toast.LENGTH_LONG).show()
+                            }
+                    }
                 }
             }
 
+    }
+
+    private fun validar(email: String): Boolean {
+        if (email.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            return true
+        } else {
+            Toast.makeText(this, "Tipo de email inválido!", Toast.LENGTH_LONG).show()
+            binding.inputEnd.error = "Preencha este campo corretamente"
+            return false
+        }
     }
 
     private fun validacao(email: String, password: String):Boolean {
