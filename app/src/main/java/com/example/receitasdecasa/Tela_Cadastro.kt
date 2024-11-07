@@ -2,6 +2,7 @@ package com.example.receitasdecasa
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -37,18 +38,31 @@ class Tela_Cadastro : AppCompatActivity() {
 
             if (validacao(email, password)){
 
+                if (validade(email)){
                     autenticacao.createUserWithEmailAndPassword(email, password)
                         .addOnSuccessListener {
-                            Toast.makeText(this, "Informações salvas", Toast.LENGTH_LONG).show()
+                            Toast.makeText(this, "Por favor, verifique seu email!", Toast.LENGTH_LONG).show()
                             autenticacao.currentUser?.sendEmailVerification()
-                            startActivity(Intent(this, Tela_nome::class.java))
+                                ?.addOnSuccessListener {
+                                    startActivity(Intent(this, Tela_nome::class.java))
+                                }
                         }
                         .addOnFailureListener {
-                            Toast.makeText(this, "Informações já cadastradas", Toast.LENGTH_LONG).show()
+                            Toast.makeText(this, "Email já cadastrado", Toast.LENGTH_LONG).show()
                         }
-
+                }
 
             }
+        }
+    }
+
+    private fun validade(email: String): Boolean {
+        if (email.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            return true
+        } else {
+            Toast.makeText(this, "Tipo de email inválido!", Toast.LENGTH_LONG).show()
+            binding.inputEmail.error = "Preencha este campo corretamente"
+            return false
         }
     }
 

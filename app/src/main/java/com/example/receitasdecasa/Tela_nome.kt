@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.receitasdecasa.databinding.ActivityTelaNomeBinding
+import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -21,6 +22,7 @@ class Tela_nome : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        FirebaseApp.initializeApp(this)
         enableEdgeToEdge()
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -41,18 +43,25 @@ class Tela_nome : AppCompatActivity() {
 
         if (validacao(nome, sobrenome)){
 
-            val user = hashMapOf( "username" to nome, "email" to sobrenome )
+            if (autenticacao.currentUser != null){
 
-            bancoDados.collection("usuarios")
-                .document(idUser)
-                .set(user)
-                .addOnSuccessListener {
-                    Toast.makeText(this, "Informações salvas", Toast.LENGTH_LONG).show()
-                    startActivity(Intent(this, Tela_Principal::class.java))
-                }
-                .addOnFailureListener {
-                    Toast.makeText(this, "Não cadastrada", Toast.LENGTH_LONG).show()
-                }
+                val user = hashMapOf( "Nome" to nome, "Sobrenome" to sobrenome )
+
+                bancoDados.collection("usuarios")
+                    .document(idUser)
+                    .set(user)
+                    .addOnSuccessListener {
+                        Toast.makeText(this, "Informações salvas", Toast.LENGTH_LONG).show()
+                        startActivity(Intent(this, Tela_Principal::class.java))
+                    }
+                    .addOnFailureListener { exception ->
+                        println("Erro: ${exception.message}")
+                        Toast.makeText(this, "Erro: ${exception.message}", Toast.LENGTH_LONG).show()
+                    }
+            } else {
+                Toast.makeText(this, "Uid não encontrado", Toast.LENGTH_LONG).show()
+            }
+
         }
 
     }

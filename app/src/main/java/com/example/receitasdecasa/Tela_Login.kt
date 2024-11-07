@@ -36,7 +36,7 @@ class Tela_Login : AppCompatActivity() {
                 if (validacao(email, senha)){
                     autenticacao.signInWithEmailAndPassword(email, senha)
                         .addOnSuccessListener {
-                            Toast.makeText(this, "Bem vindo de voolta!", Toast.LENGTH_LONG).show()
+                            Toast.makeText(this, "Bem vindo de volta!", Toast.LENGTH_LONG).show()
                             startActivity(Intent(this, Tela_Principal::class.java))
                         }
                         .addOnFailureListener {
