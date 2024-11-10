@@ -9,8 +9,12 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.receitasdecasa.databinding.ActivityTelaLoginBinding
 import com.example.receitasdecasa.databinding.ActivityTelaPrincipalBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 class Tela_Principal : AppCompatActivity() {
+    private val bancoDados by lazy {
+        FirebaseFirestore.getInstance()
+    }
     private val autenticacao = FirebaseAuth.getInstance()
     private val binding by lazy {
         ActivityTelaPrincipalBinding.inflate(layoutInflater)
@@ -26,7 +30,28 @@ class Tela_Principal : AppCompatActivity() {
         }
         binding.btnSair.setOnClickListener {
             autenticacao.signOut()
-            startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
+        binding.btnReceitas.setOnClickListener {
+            startActivity(Intent(this, Tela_receitas::class.java))
+        }
+    }
+    private fun recuperandoDados() {
+        val id = autenticacao.currentUser?.uid
+
+        if (id != null){
+            bancoDados.collection("usuarios").document(id).get()
+                .addOnSuccessListener { documentSnapshot ->
+                    val dadoUser = documentSnapshot.data
+                    if (dadoUser != null){
+                        val nome = dadoUser["Nome"] as String
+                        binding.name.text = nome
+                    }
+                }
+        }
+    }
+    override fun onStart() {
+        super.onStart()
+        recuperandoDados()
     }
 }
