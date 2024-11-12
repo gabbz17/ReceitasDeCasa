@@ -1,23 +1,20 @@
 package com.example.receitasdecasa
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.receitasdecasa.databinding.ActivityTelaLoginBinding
+import com.example.receitasdecasa.databinding.ActivityTelaChatBinding
 import com.example.receitasdecasa.databinding.ActivityTelaPrincipalBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
-class Tela_Principal : AppCompatActivity() {
-    private val bancoDados by lazy {
-        FirebaseFirestore.getInstance()
-    }
+class Tela_chat : AppCompatActivity() {
+    private val bancoDados = FirebaseFirestore.getInstance()
     private val autenticacao = FirebaseAuth.getInstance()
     private val binding by lazy {
-        ActivityTelaPrincipalBinding.inflate(layoutInflater)
+        ActivityTelaChatBinding.inflate(layoutInflater)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,33 +25,31 @@ class Tela_Principal : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.btnSair.setOnClickListener {
-            autenticacao.signOut()
-            finish()
-        }
-        binding.btnReceitas.setOnClickListener {
-            startActivity(Intent(this, Tela_receitas::class.java))
-        }
-        binding.btnChat.setOnClickListener {
-            startActivity(Intent(this, Tela_chat::class.java))
+        binding.floatingActionButton.setOnClickListener {
+            val mensagem = binding.editMsg.text.toString()
+            salvarMensagem(mensagem)
         }
     }
-    private fun recuperandoDados() {
-        val id = autenticacao.currentUser?.uid
 
-        if (id != null){
-            bancoDados.collection("usuarios").document(id).get()
+    private fun salvarMensagem(mensagem: String) {
+        val idUser = autenticacao.currentUser?.uid
+
+        if (idUser != null){
+            bancoDados.collection("usuarios").document(idUser).get()
                 .addOnSuccessListener { documentSnapshot ->
                     val dadoUser = documentSnapshot.data
                     if (dadoUser != null){
                         val nome = dadoUser["Nome"] as String
-                        binding.name.text = nome
+                        val dados = mapOf(
+                            "De $nome" to mensagem
+                        )
+
+                        bancoDados.collection("mensagens")
+                            .document("$idUser")
+                            .set(dados)
+
                     }
                 }
         }
-    }
-    override fun onStart() {
-        super.onStart()
-        recuperandoDados()
     }
 }
