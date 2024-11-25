@@ -23,7 +23,7 @@ class Tela_chat : AppCompatActivity() {
     private val autenticacao = FirebaseAuth.getInstance()
     private val binding by lazy {ActivityTelaChatBinding.inflate(layoutInflater)}
     // Chave de API da OpenAI
-    private val apiKey = "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"
+    private val apiKey = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
