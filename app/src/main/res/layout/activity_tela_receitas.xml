@@ -141,7 +141,7 @@
             app:srcCompat="@drawable/chapeuzinho" />
 
         <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/back3"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
@@ -155,7 +155,7 @@
             tools:srcCompat="@color/material_dynamic_neutral80" />
 
         <ImageView
-            android:id="@+id/imageView12"
+            android:id="@+id/back4"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
@@ -165,11 +165,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/back3"
             tools:srcCompat="@color/material_dynamic_neutral80" />
 
         <TextView
-            android:id="@+id/textView27"
+            android:id="@+id/title3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -177,31 +177,31 @@
             android:text="Frango ao Molho de Mostarda"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView13"
-            app:layout_constraintTop_toTopOf="@+id/imageView11" />
+            app:layout_constraintStart_toEndOf="@+id/foto3"
+            app:layout_constraintTop_toTopOf="@+id/back3" />
 
         <TextView
-            android:id="@+id/textView28"
+            android:id="@+id/sb3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" Por Gustavo"
             android:textColor="@color/material_dynamic_neutral20"
-            app:layout_constraintEnd_toEndOf="@+id/textView27"
-            app:layout_constraintStart_toStartOf="@+id/textView27"
-            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+            app:layout_constraintEnd_toEndOf="@+id/title3"
+            app:layout_constraintStart_toStartOf="@+id/title3"
+            app:layout_constraintTop_toBottomOf="@+id/title3" />
 
         <TextView
-            android:id="@+id/textView29"
+            android:id="@+id/sbt3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" 4° semestre"
             android:textColor="@color/material_dynamic_neutral20"
-            app:layout_constraintEnd_toEndOf="@+id/textView28"
-            app:layout_constraintStart_toStartOf="@+id/textView28"
-            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+            app:layout_constraintEnd_toEndOf="@+id/sb3"
+            app:layout_constraintStart_toStartOf="@+id/sb3"
+            app:layout_constraintTop_toBottomOf="@+id/sb3" />
 
         <TextView
-            android:id="@+id/textView30"
+            android:id="@+id/title4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
@@ -209,51 +209,51 @@
             android:text="Bolo de arroz"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView14"
-            app:layout_constraintTop_toTopOf="@+id/imageView12" />
+            app:layout_constraintStart_toEndOf="@+id/foto4"
+            app:layout_constraintTop_toTopOf="@+id/back4" />
 
         <TextView
-            android:id="@+id/textView31"
+            android:id="@+id/sb4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Por Géssica Bogano"
             android:textColor="@color/material_dynamic_neutral20"
-            app:layout_constraintEnd_toEndOf="@+id/textView30"
-            app:layout_constraintStart_toStartOf="@+id/textView30"
-            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+            app:layout_constraintEnd_toEndOf="@+id/title4"
+            app:layout_constraintStart_toStartOf="@+id/title4"
+            app:layout_constraintTop_toBottomOf="@+id/title4" />
 
         <TextView
-            android:id="@+id/textView32"
+            android:id="@+id/sbt4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1° semestre "
             android:textColor="@color/material_dynamic_neutral20"
-            app:layout_constraintEnd_toEndOf="@+id/textView31"
-            app:layout_constraintStart_toStartOf="@+id/textView31"
-            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+            app:layout_constraintEnd_toEndOf="@+id/sb4"
+            app:layout_constraintStart_toStartOf="@+id/sb4"
+            app:layout_constraintTop_toBottomOf="@+id/sb4" />
 
         <ImageView
-            android:id="@+id/imageView13"
+            android:id="@+id/foto3"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="2dp"
-            app:layout_constraintStart_toStartOf="@+id/imageView11"
-            app:layout_constraintTop_toTopOf="@+id/imageView11"
+            app:layout_constraintStart_toStartOf="@+id/back3"
+            app:layout_constraintTop_toTopOf="@+id/back3"
             app:srcCompat="@drawable/chapeuzinho" />
 
         <ImageView
-            android:id="@+id/imageView14"
+            android:id="@+id/foto4"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="2dp"
-            app:layout_constraintStart_toStartOf="@+id/imageView12"
-            app:layout_constraintTop_toTopOf="@+id/imageView12"
+            app:layout_constraintStart_toStartOf="@+id/back4"
+            app:layout_constraintTop_toTopOf="@+id/back4"
             app:srcCompat="@drawable/chapeuzinho" />
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/back5"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
@@ -263,11 +263,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            app:layout_constraintTop_toBottomOf="@+id/back4"
             tools:srcCompat="@color/material_dynamic_neutral80" />
 
         <TextView
-            android:id="@+id/textView33"
+            android:id="@+id/title5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -275,41 +275,41 @@
             android:text="Doce de mamão verde com coco"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView16"
-            app:layout_constraintTop_toTopOf="@+id/imageView15" />
+            app:layout_constraintStart_toEndOf="@+id/foto5"
+            app:layout_constraintTop_toTopOf="@+id/back5" />
 
         <TextView
-            android:id="@+id/textView34"
+            android:id="@+id/sb5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" Por Fábia de Jesus"
             android:textColor="@color/material_dynamic_neutral20"
-            app:layout_constraintEnd_toEndOf="@+id/textView33"
-            app:layout_constraintStart_toStartOf="@+id/textView33"
-            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+            app:layout_constraintEnd_toEndOf="@+id/title5"
+            app:layout_constraintStart_toStartOf="@+id/title5"
+            app:layout_constraintTop_toBottomOf="@+id/title5" />
 
         <TextView
-            android:id="@+id/textView35"
+            android:id="@+id/sbt5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3°semestre"
             android:textColor="@color/material_dynamic_neutral20"
-            app:layout_constraintEnd_toEndOf="@+id/textView34"
-            app:layout_constraintStart_toStartOf="@+id/textView34"
-            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+            app:layout_constraintEnd_toEndOf="@+id/sb5"
+            app:layout_constraintStart_toStartOf="@+id/sb5"
+            app:layout_constraintTop_toBottomOf="@+id/sb5" />
 
         <ImageView
-            android:id="@+id/imageView16"
+            android:id="@+id/foto5"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="2dp"
-            app:layout_constraintStart_toStartOf="@+id/imageView15"
-            app:layout_constraintTop_toTopOf="@+id/imageView15"
+            app:layout_constraintStart_toStartOf="@+id/back5"
+            app:layout_constraintTop_toTopOf="@+id/back5"
             app:srcCompat="@drawable/chapeuzinho" />
 
         <ImageView
-            android:id="@+id/imageView17"
+            android:id="@+id/back6"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
@@ -319,31 +319,31 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:layout_constraintTop_toBottomOf="@+id/back5"
             tools:srcCompat="@color/material_dynamic_neutral80" />
 
         <TextView
-            android:id="@+id/textView36"
+            android:id="@+id/sb6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Por Leonardo Martins"
             android:textColor="@color/material_dynamic_neutral20"
-            app:layout_constraintEnd_toEndOf="@+id/textView38"
-            app:layout_constraintStart_toStartOf="@+id/textView38"
-            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+            app:layout_constraintEnd_toEndOf="@+id/title6"
+            app:layout_constraintStart_toStartOf="@+id/title6"
+            app:layout_constraintTop_toBottomOf="@+id/title6" />
 
         <TextView
-            android:id="@+id/textView37"
+            android:id="@+id/sbt6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3° semestre"
             android:textColor="@color/material_dynamic_neutral20"
-            app:layout_constraintEnd_toEndOf="@+id/textView36"
-            app:layout_constraintStart_toStartOf="@+id/textView36"
-            app:layout_constraintTop_toBottomOf="@+id/textView36" />
+            app:layout_constraintEnd_toEndOf="@+id/sb6"
+            app:layout_constraintStart_toStartOf="@+id/sb6"
+            app:layout_constraintTop_toBottomOf="@+id/sb6" />
 
         <TextView
-            android:id="@+id/textView38"
+            android:id="@+id/title6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -351,21 +351,21 @@
             android:text="Salpicão da casca de melancia"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView18"
-            app:layout_constraintTop_toTopOf="@+id/imageView17" />
+            app:layout_constraintStart_toEndOf="@+id/foto6"
+            app:layout_constraintTop_toTopOf="@+id/back6" />
 
         <ImageView
-            android:id="@+id/imageView18"
+            android:id="@+id/foto6"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="2dp"
-            app:layout_constraintStart_toStartOf="@+id/imageView17"
-            app:layout_constraintTop_toTopOf="@+id/imageView17"
+            app:layout_constraintStart_toStartOf="@+id/back6"
+            app:layout_constraintTop_toTopOf="@+id/back6"
             app:srcCompat="@drawable/chapeuzinho" />
 
         <ImageView
-            android:id="@+id/imageView19"
+            android:id="@+id/back7"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
@@ -375,11 +375,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView17"
+            app:layout_constraintTop_toBottomOf="@+id/back6"
             tools:srcCompat="@color/material_dynamic_neutral80" />
 
         <ImageView
-            android:id="@+id/imageView20"
+            android:id="@+id/back8"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
@@ -389,11 +389,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView19"
+            app:layout_constraintTop_toBottomOf="@+id/back7"
             tools:srcCompat="@color/material_dynamic_neutral80" />
 
         <TextView
-            android:id="@+id/textView39"
+            android:id="@+id/title7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -401,41 +401,41 @@
             android:text="Tortilha de batata e Couve-Flor"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView21"
-            app:layout_constraintTop_toTopOf="@+id/imageView19" />
+            app:layout_constraintStart_toEndOf="@+id/foto7"
+            app:layout_constraintTop_toTopOf="@+id/back7" />
 
         <TextView
-            android:id="@+id/textView40"
+            android:id="@+id/sbt7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1° semestre"
             android:textColor="@color/material_dynamic_neutral20"
-            app:layout_constraintEnd_toEndOf="@+id/textView41"
-            app:layout_constraintStart_toStartOf="@+id/textView41"
-            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+            app:layout_constraintEnd_toEndOf="@+id/sb7"
+            app:layout_constraintStart_toStartOf="@+id/sb7"
+            app:layout_constraintTop_toBottomOf="@+id/sb7" />
 
         <TextView
-            android:id="@+id/textView41"
+            android:id="@+id/sb7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Por Igor Rafael"
             android:textColor="@color/material_dynamic_neutral20"
-            app:layout_constraintEnd_toEndOf="@+id/textView39"
-            app:layout_constraintStart_toStartOf="@+id/textView39"
-            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+            app:layout_constraintEnd_toEndOf="@+id/title7"
+            app:layout_constraintStart_toStartOf="@+id/title7"
+            app:layout_constraintTop_toBottomOf="@+id/title7" />
 
         <ImageView
-            android:id="@+id/imageView21"
+            android:id="@+id/foto7"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="2dp"
-            app:layout_constraintStart_toStartOf="@+id/imageView19"
-            app:layout_constraintTop_toTopOf="@+id/imageView19"
+            app:layout_constraintStart_toStartOf="@+id/back7"
+            app:layout_constraintTop_toTopOf="@+id/back7"
             app:srcCompat="@drawable/chapeuzinho" />
 
         <TextView
-            android:id="@+id/textView42"
+            android:id="@+id/title8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
@@ -443,37 +443,37 @@
             android:text="Panqueca de cenoura"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView23"
-            app:layout_constraintTop_toTopOf="@+id/imageView20" />
+            app:layout_constraintStart_toEndOf="@+id/foto8"
+            app:layout_constraintTop_toTopOf="@+id/back8" />
 
         <TextView
-            android:id="@+id/textView43"
+            android:id="@+id/sbt8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2° semestre"
             android:textColor="@color/material_dynamic_neutral20"
-            app:layout_constraintEnd_toEndOf="@+id/textView44"
-            app:layout_constraintStart_toStartOf="@+id/textView44"
-            app:layout_constraintTop_toBottomOf="@+id/textView44" />
+            app:layout_constraintEnd_toEndOf="@+id/sb8"
+            app:layout_constraintStart_toStartOf="@+id/sb8"
+            app:layout_constraintTop_toBottomOf="@+id/sb8" />
 
         <TextView
-            android:id="@+id/textView44"
+            android:id="@+id/sb8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Por Willian da Silva"
             android:textColor="@color/material_dynamic_neutral20"
-            app:layout_constraintEnd_toEndOf="@+id/textView42"
-            app:layout_constraintStart_toStartOf="@+id/textView42"
-            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+            app:layout_constraintEnd_toEndOf="@+id/title8"
+            app:layout_constraintStart_toStartOf="@+id/title8"
+            app:layout_constraintTop_toBottomOf="@+id/title8" />
 
         <ImageView
-            android:id="@+id/imageView23"
+            android:id="@+id/foto8"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="2dp"
-            app:layout_constraintStart_toStartOf="@+id/imageView20"
-            app:layout_constraintTop_toTopOf="@+id/imageView20"
+            app:layout_constraintStart_toStartOf="@+id/back8"
+            app:layout_constraintTop_toTopOf="@+id/back8"
             app:srcCompat="@drawable/chapeuzinho" />
 
         <TextView
