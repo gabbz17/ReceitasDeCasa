@@ -43,9 +43,19 @@ android {
 }
 
 dependencies {
+    // Retrofit - biblioteca para realizar requisições HTTP
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+
+    // Gson converter - para converter o JSON em objetos Kotlin/Java
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // OkHttp - biblioteca HTTP que Retrofit utiliza por baixo dos panos
+    implementation ("com.squareup.okhttp3:okhttp:4.9.3")
+
+    // HttpLoggingInterceptor - para logar as requisições HTTP (útil para depuração)
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.3")
 
     //FIREBASE
-
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     implementation("com.google.firebase:firebase-analytics-ktx")
 

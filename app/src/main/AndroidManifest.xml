@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -15,21 +16,33 @@
         android:theme="@style/Theme.ReceitasDeCasa"
         tools:targetApi="31">
         <activity
-            android:windowSoftInputMode="adjustPan"
+            android:name=".Tela_frango"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Tela_snack"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".Tela_chat"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Tela_receitas"
             android:exported="false" />
         <activity
             android:name=".Tela_nome"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Tela_Principal"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Tela_Cadastro"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Tela_Login"
             android:exported="false"
