@@ -38,6 +38,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 peito de frango "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView84" />
 
@@ -60,6 +61,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1/2 melancia  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
@@ -70,6 +72,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 2 colheres de sopa de azeite  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
@@ -80,6 +83,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 cebola  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
@@ -90,6 +94,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 dente de alho  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
@@ -100,6 +105,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1/2 Talo de salsão  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView74" />
 
@@ -110,6 +116,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 pimentão  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView75" />
 
@@ -120,6 +127,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1/2 de repolho  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView76" />
 
@@ -130,6 +138,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1/2 maça verde  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView77" />
 
@@ -140,6 +149,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 8 azeitonas  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView78" />
 
@@ -150,6 +160,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 colher de sopa de mostarda  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView79" />
 
@@ -160,6 +171,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 copo de requeijão   "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView80" />
 
@@ -170,6 +182,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 5 colheres de sopa de maionese  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView81" />
 
@@ -180,6 +193,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 limão  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView82" />
 
@@ -190,6 +204,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Batata palha  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView86" />
 
@@ -200,6 +215,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Cheiro verde, pimenta do reino e sal a gosto  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView83" />
 
@@ -211,6 +227,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="Descascar a melancia, maçã verde e retirar a entrecasca da melancia. Refoga o frango na cebola e no alho e acrescenta o pimentão cortado em cubos, juntamente com o cheiro verde, pimenta do reino e sal. Adiciona em outro recipiente a azeitona, a entrecasca da melancia ralada, os talos cortados, o repolho, a mostarda, a maionese e o requeijão. Mistura todos os ingredientes e adiciona a batata palha e sal se precisar. "
+        android:textColor="@color/Description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

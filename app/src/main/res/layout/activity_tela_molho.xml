@@ -51,6 +51,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 2 peitos de frango "
+        android:textColor="@color/material_dynamic_neutral10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
@@ -61,6 +62,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 200ml de creme de leite "
+        android:textColor="@color/material_dynamic_neutral10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView60" />
 
@@ -71,6 +73,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 colher de sopa de manteiga "
+        android:textColor="@color/material_dynamic_neutral10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView61" />
 
@@ -81,6 +84,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 dente de alho picado "
+        android:textColor="@color/material_dynamic_neutral10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
@@ -91,6 +95,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 colher de sopa de mostarda dijon "
+        android:textColor="@color/material_dynamic_neutral10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
@@ -101,6 +106,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Sal e pimenta a gosto "
+        android:textColor="@color/material_dynamic_neutral10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
@@ -112,6 +118,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="Tempere os peitos de frango com sal e pimenta.   Em uma frigideira, derreta a manteiga e doure o frango de ambos os lados.   Retire o frango e reserve.   Na mesma frigideira, refogue o alho e adicione o creme de leite e a mostarda. Misture até formar um molho homogêneo.   Coloque o frango de volta na frigideira e cozinhe por mais alguns minutos no molho. Sirva com arroz ou legumes. "
+        android:textColor="@color/material_dynamic_neutral10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

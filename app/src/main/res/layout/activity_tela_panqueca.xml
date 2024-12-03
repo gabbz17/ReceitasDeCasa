@@ -60,6 +60,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 4 colheres (sopa) de óleo "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView93" />
 
@@ -70,6 +71,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 2 ovos "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
@@ -80,6 +82,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Óleo para untar "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView100" />
 
@@ -90,6 +93,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 xícara (chá) de queijo parmesão ralado para polvilhar "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView99" />
 
@@ -100,6 +104,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 2 xícaras (chá) de leite "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView101" />
 
@@ -110,6 +115,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Sal a gosto "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView42" />
 
@@ -120,6 +126,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 4 xícaras (chá) de presunto triturado "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView98" />
 
@@ -130,6 +137,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Sal e pimenta-do-reino a gosto "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView97" />
 
@@ -140,6 +148,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 xícara (chá) de ricota triturada  "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView95" />
 
@@ -150,6 +159,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Cheiro-verde picado para polvilhar "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView92" />
 
@@ -160,6 +170,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 2 xícaras (chá) de molho de tomate "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView44" />
 
@@ -170,6 +181,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 2 xícaras (chá) de farinha de trigo "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView94" />
 
@@ -180,6 +192,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 cenoura picada "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView43" />
 
@@ -190,6 +203,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 xícara (chá) de requeijão tipo Catupiry® "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView96" />
 
@@ -200,6 +214,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Cheiro-verde picado a gosto "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView102" />
 
@@ -211,6 +226,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="Para a massa, bata no liquidificador os ovos, a cenoura, o leite, o óleo, sal e a farinha até ficarem homogêneos. Aqueça uma frigideira antiaderente em fogo médio, coloque o equivalente a 1 concha pequena de massa e gire para cobrir todo o fundo. Deixe dourar levemente. Vire a massa e doure do outro lado. Proceda da mesma forma com toda a massa. Deixe esfriar. Misture os ingredientes do recheio e divida entre as massas. Enrole como rocambole e coloque em um refratário grande, untado com um pouco do molho. Cubra com o molho restante, polvilhe com o queijo parmesão e leve ao forno médio, pré aquecido, por 20 minutos. Polvilhe com cheiro-verde e sirva em seguida. "
+        android:textColor="@color/Description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

@@ -51,6 +51,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 cebola pequena "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
@@ -61,6 +62,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1/4 xícara (chá) de couve- flor lavada e picada"
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView88" />
 
@@ -71,6 +73,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 2 batata pequena cortada em tiras bem finas "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
@@ -81,6 +84,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1/2 colher (chá) de sal "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView90" />
 
@@ -91,6 +95,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 colher (sopa) de azeite "
+        android:textColor="@color/material_dynamic_neutral10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView41" />
 
@@ -101,6 +106,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text=" - 2 ovos médios "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
@@ -112,6 +118,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="Descasque e pique a cebola. Bata os ovos em um refratário pequeno, acrescente o sal, a cebola, a couve- flor e misture bem. Em uma frigideira, doure a batata no azeite, acrescente a mistura de ovos batidos e frite até que os dois lados fiquem dourados.  "
+        android:textColor="@color/material_dynamic_neutral10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

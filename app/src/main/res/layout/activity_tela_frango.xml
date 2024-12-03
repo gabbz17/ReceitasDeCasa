@@ -51,6 +51,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 01 filés de peito frango "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
@@ -61,6 +62,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1/2 cebola "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -71,6 +73,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 02 dentes de alho "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
@@ -81,6 +84,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1/2 pimentão verde "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
@@ -91,6 +95,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1/2 tomate "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
@@ -101,6 +106,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Sal e pimenta do reino a gosto "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
@@ -111,6 +117,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Salsa, cebolinha, manjericão, orégano (opcional) "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
@@ -121,6 +128,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Azeite de oliva "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
@@ -131,6 +139,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Manteiga a gosto "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView57" />
 
@@ -142,6 +151,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="Colocar o peito de frango sobre um plástico filme, temperar com sal e pimenta do reino, feche o plástico e reserve. Numa panela, refogue com azeite o alho, a cebola, o pimentão, o tomate. Com uma faca, abra o peito de frango no meio no sentido longetudinal e coloque os temperos refogados. Unte uma forma, coloque os peitos já recheados, e cubra com papel alumínio. Leve ao forno a 200°C por aproximadamente, 40min. Retire do forno e coloque para dourar com manteiga numa frigideira. Sirva num prato e polvilhe as ervas por cima do peito de frango. "
+        android:textColor="@color/Description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

@@ -27,6 +27,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Farinha Panko "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView52" />
 
@@ -37,6 +38,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Sal e pimenta do reino a gosto"
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView51" />
 
@@ -47,6 +49,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1/2 xícara de farinha de rosca "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView50" />
 
@@ -69,6 +72,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 1 ovo "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView49" />
 
@@ -79,6 +83,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- 2 xícaras de arroz cozido "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView48" />
 
@@ -89,6 +94,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text=" - 2 xícaras feijão cozido sem o caldo "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
@@ -100,6 +106,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="Processe o arroz, feijão, ovo, farinha de rosca, sal e pimenta até formar uma massa. Modele quadradinhos, passe na farinha Panko e frite em óleo aquecido. Retire após dourar e coloque sobre um papel toalha. Sirva-o com uma maionese e ou catchup. "
+        android:textColor="@color/Description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,6 +119,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="- Óleo para fritar "
+        android:textColor="@color/Description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView53" />
 

@@ -5,4 +5,5 @@
     <color name="PrimaryColor">#3F51B5</color>
     <color name="PrimaryVarianty">#2F8FCE</color>
     <color name="SubTitle">#908B8B</color>
+    <color name="Description">#191C1E</color>
 </resources>
